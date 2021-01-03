@@ -1,0 +1,22 @@
+"""
+Írj egy Python programot, amely bekér három egész számot a felhasználótól és kiírja a
+képernyőre, hogy mind a három páros szám-e (igen/nem)!
+"""
+szam1 = int(input("Add meg az első számot: "))
+szam2 = int(input("Add meg az második számot: "))
+szam3 = int(input("Add meg az harmadik számot: "))
+
+if szam1 % 2 == 0 and szam2 % 2 == 0 and szam3 % 2 == 0:
+    print("A felsorolt három szám közül mindegyik páros!")
+
+elif szam1 % 2 != 0 and szam2 % 2 == 0 and szam3 % 2 == 0:
+    print("A felsorolt számok közül csak a második és a harmadik páros.")
+
+elif szam1 % 2 == 0 and szam2 % 2 != 0 and szam3 % 2 == 0:
+    print("A felsorolt számok közül csak az első és a harmadik páros.")
+
+elif szam1 % 2 == 0 and szam2 % 2 == 0 and szam3 % 2 != 0:
+    print(" A felsorolt számok közül csak az első és a második páros.")
+
+else:
+    print("A felsorolt számok közül egyik sem páros.")
