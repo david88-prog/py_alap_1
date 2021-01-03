@@ -1,0 +1,16 @@
+Írj egy Python programot, amely bekér három számot a felhasználótól és kiírja a képernyőre a
+legkisebb értéket ezek közül!
+"""
+
+szam1 = int(input("Kérem az első számot: "))
+szam2 = int(input("Kérem az második számot: "))
+szam3 = int(input("Kérem az harmadik számot: "))
+
+if szam1 < szam2 and szam1 < szam3:
+    print("A legkisebb szám: ", szam1)
+
+elif szam2 < szam1 and szam2 < szam3:
+    print("A legkisebb szám: ", szam2)
+
+else:
+    print("A legkisebb szám: ", szam3)
