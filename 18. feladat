@@ -1,0 +1,14 @@
+"""
+Írj egy Python függvényt, amely paraméterként kap 2 egész számot és visszatér a két szám által
+meghatározott zárt intervallumban található egész számok összegével! A programodban hívd
+is meg ezt az alprogramot!
+
+"""
+
+def összead(szam1,szam2):
+    tmp = 0
+    for i in range(szam1 + 1, szam2):
+        tmp = i + tmp
+    print(tmp)
+
+összead(5,8)
