@@ -1,0 +1,12 @@
+"""
+Írj egy Python programot, amely bekér a felhasználótól egy mondatot (sztringet) és ennek
+szavait (szóközzel elválasztott részsztringjeit) fordított sorrendben kiírja a képernyőre!
+"""
+
+mondat = str(input("Kérem a mondatot:"))
+szavak = mondat.split(" ")
+szavak.reverse()
+print(szavak)
+
+mondat2 = " ".join(szavak)
+print(mondat2)
