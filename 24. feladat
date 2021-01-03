@@ -1,0 +1,11 @@
+"""
+Írj egy Python programot, amely megmondja előfordul-e (igen/nem) a Debrecen szó a temp.txt
+fájlban!
+
+"""
+f = open("temp.txt", encoding="utf-8")
+f = f.read()
+
+if "Debrecen" in f:
+    print("Igen")
+else: print("Nem")
