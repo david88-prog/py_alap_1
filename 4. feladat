@@ -1,0 +1,17 @@
+"""
+Írj egy Python programot, amely bekér egy egész számot a felhasználótól és kiírja a képernyőre,
+hogy osztható-e (igen/nem) a szám 3-mal vagy 5-tel!
+"""
+szam = int(input("Kérem a számot: "))
+
+if szam % 3 == 0 and szam % 5 == 0:
+    print("A szám osztható 3-al és 5-el is.")
+
+elif szam % 3 == 0 and szam % 5 != 0:
+    print("A szám osztható 3-al, de 5-el nem.")
+
+elif szam % 3 != 0 and szam % 5 == 0:
+    print("A szám osztható 5-el, de 3-al nem.")
+
+else:
+    print("A megadott szám nem osztható sem 3-al, sem 5-el.")
