@@ -1,0 +1,17 @@
+"""
+Írj egy Python programot, amely bekér három számot a felhasználótól és kiírja a képernyőre a
+legnagyobb értéket ezek közül!
+
+"""
+szam1 = int(input("Kérem az első számot:\t"))
+szam2 = int(input("Kérem az második számot:\t"))
+szam3 = int(input("Kérem az harmadik számot:\t"))
+
+if szam1 > szam2 and szam1 > szam3:
+    print("A legnagyobb szám:\t", szam1)
+
+elif szam2 > szam1 and szam2 > szam3:
+    print("A legnagyobb szám:\t", szam2)
+
+else:
+    print("A legnagyobb szám:\t", szam3)
