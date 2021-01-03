@@ -1,0 +1,24 @@
+"""
+Írj egy Python programot, amely bekér két pozitív egész számot a felhasználótól és kiírja a
+képernyőre azokat a páros számokat, amelyek a két adott érték közötti zárt intervallumban
+találhatóak!
+
+"""
+"""
+szam1 = int(input("Kérem a kisebb számot: "))
+szam2 = int(input("Kérem az nagyobb számot: "))
+
+print("Az első és második szám közötti páros számok:")
+
+while szam1 <= szam2:
+    szam1 = szam1 + 1
+    if szam1 % 2 == 0:
+        print(szam1)
+    else:
+        continue
+"""
+szam1 = int(input("szám 1:"))
+szam2 = int(input("szám 2:"))
+for i in range(szam1, szam2):
+    if i%2 == 0:
+        print(i)
