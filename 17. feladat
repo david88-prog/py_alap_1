@@ -1,0 +1,12 @@
+"""
+Írj egy logikai értékkel visszatérő Python függvényt, amely paraméterként kap három számot
+és eldönti, hogy az összes paramétere pozitív-e! A programodban hívd is meg ezt az
+alprogramot!
+"""
+
+def pozitive(a,b,c):
+    if a > 0 and b > 0 and c > 0:
+        result = True
+    else: result = False
+    return result
+print(pozitive(2,4,5))
