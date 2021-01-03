@@ -1,0 +1,20 @@
+"""
+Írj egy Python programot, amely bekér három számot a felhasználótól és kiírja a képernyőre,
+hogy a számok közül bármelyik kettőnek az összege egyenlő-e a harmadik számmal!
+"""
+
+szam1 = int(input("Kérem az első számot: "))
+szam2 = int(input("Kérem az második számot: "))
+szam3 = int(input("Kérem az harmadik számot: "))
+
+if szam1 + szam2 == szam3:
+    print("Az első és második szám összege a harmadik szám!")
+
+elif szam1 + szam3 == szam2:
+    print("Az első és a harmadik szám összege a második szám!")
+
+elif szam2 + szam3 == szam1:
+    print("A második és a harmadik szám összege az első szám!")
+
+else:
+    print("A felsorolt számok közt nem áll fent a fenti összefüggés.")
