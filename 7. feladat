@@ -1,0 +1,12 @@
+"""
+Írj egy Python programot, amely bekér két szót (sztringet) a felhasználótól és ABC sorrendben
+kiírja őket a képernyőre!
+
+"""
+szo1 = str(input("Kérem az első szót:"))
+szo2 = str(input("Kérem az második szót:"))
+
+if szo1 > szo2 and szo1 != szo2:
+    print(szo2, szo1)
+else:
+    print(szo1, szo2)
