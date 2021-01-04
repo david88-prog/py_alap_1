@@ -1,0 +1,28 @@
+"""
+Írj egy Python programot, amely a teknőcgrafika segítségével kirajzol egy „házikó” alakú
+ötszöget!
+"""
+
+import turtle
+ablak = turtle.Screen()
+ablak.setup(800,800)
+ablak.bgcolor('white')
+ablak.title("program_1")
+fred = turtle.Turtle()
+fred.pencolor("black")
+
+fred.goto(0,0)
+fred.pendown()
+fred.fd(200)
+fred.left(90)
+fred.fd(200)
+fred.left(45)
+fred.fd(200)
+fred.left(90)
+fred.fd(200)
+fred.left(45)
+fred.fd(200)
+fred.left(90)
+fred.goto(0,0)
+fred.penup()
+ablak.exitonclick()
