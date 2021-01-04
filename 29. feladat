@@ -1,0 +1,45 @@
+"""
+Írj egy Python programot, amely a teknőcgrafika segítségével kirajzol egy 30, 40 és 50 egység
+oldalhosszúságú derékszögű háromszöget!
+"""
+
+import turtle
+ablak = turtle.Screen()
+ablak.setup(800,800)
+ablak.bgcolor('white')
+ablak.title("program_1")
+fred = turtle.Turtle()
+fred.pencolor("black")
+
+a = 30
+b = 40
+c = 50
+
+fred.goto(0,0)
+fred.left(90)
+fred.fd(a)
+fred.right(135)
+fred.goto(a, 0)
+fred.goto(0, 0)
+fred.penup()
+
+fred.reset()
+fred.goto(0,0)
+fred.pendown()
+fred.left(90)
+fred.fd(b)
+fred.right(135)
+fred.goto(b, 0)
+fred.goto(0, 0)
+fred.penup()
+
+fred.reset()
+fred.goto(0,0)
+fred.pendown()
+fred.left(90)
+fred.fd(c)
+fred.right(135)
+fred.goto(c, 0)
+fred.goto(0, 0)
+fred.penup()
+ablak.exitonclick()
